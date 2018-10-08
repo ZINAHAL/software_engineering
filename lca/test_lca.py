@@ -30,6 +30,15 @@ def test_when_some_given_nodes_are_present():
     assert lca(root, 999, 14) == None
     assert lca(root, 8, 999) == None
     assert lca(root, 999, 20) == None
+
+
+def test_when_null_values_are_given():
+    assert lca(root, 8, None) == None
+    assert lca(root, None, 4) == None
+    assert lca(root, None, None) == None
+    assert lca(None, None, None) == None
+    assert lca(root, 999, 999) == None
+    assert lca(None, 4, 14) == None
     
 
 #this function will be executed last after all the test functions are completed

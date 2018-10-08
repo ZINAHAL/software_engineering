@@ -3,7 +3,7 @@
 #
 
 # A recursive python program to find LCA of two nodes 
-# n1 and n2 
+# n1(k1) and n2(k2) 
 
 # A Binary tree node 
 
@@ -17,7 +17,7 @@ class Node:
 
 
 def get_data(root, given_key):
-    if root is None:
+    if (root is None) or (given_key is None):
         return None
     if given_key < root.key:
         return get_data(root.left, given_key)
