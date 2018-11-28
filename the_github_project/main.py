@@ -17,7 +17,7 @@ def home_page():
         languagesUsed = data_gatherer.gather_used_languages_in_repos()
         flash("{}: Here is your pie...".format(form.username.data))
 
-    return render_template("home_page.html", form=form)
+    return render_template("home_page.html", form=form, data=languagesUsed)
 
 
 #this must be at the end of the page
