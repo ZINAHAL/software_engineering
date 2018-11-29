@@ -49,14 +49,21 @@
             <div> <canvas id="piechart"></canvas> </div>
             <script>
                     let language_data = {{ data | tojson }};
+                    let pie_colors = [];
+                    var len = Object.keys(language_data).length;
+                    for(i = 0; i < len; i++)
+                    {
+                        pie_colors[i] = `rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+                    }
                     let piechart = document.getElementById("piechart").getContext("2d");
                     let language_chart = new Chart(piechart, {
                         type: "pie",
                         data: {
                             labels: Object.keys(language_data),
                             datasets: [{
-                                label: "zinah",
-                                data: Object.values(language_data)
+                                label: "ran out of names",
+                                data: Object.values(language_data),
+                                backgroundColor: pie_colors
                             }]
                         },
                         options: {}
