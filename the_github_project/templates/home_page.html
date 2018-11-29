@@ -63,10 +63,19 @@
                             datasets: [{
                                 label: "ran out of names",
                                 data: Object.values(language_data),
-                                backgroundColor: pie_colors
+                                backgroundColor: pie_colors,
+                                hoverBorderWidth:3,
+                                hoverBorderColor: "#000"
                             }]
                         },
-                        options: {}
+                        options: {
+                            legend: {
+                                position: "bottom",
+                                labels: {
+                                    fontColor: "#000"
+                                }
+                            }
+                        }
                     })
             </script>
             {% endif %}
