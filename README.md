@@ -9,3 +9,7 @@ This statistic is developed using python flask and Charts.js. You can experiment
 
 **PREVIEW: Linus Torvalds**
 ![torvalds](https://user-images.githubusercontent.com/23452999/49346430-4d717100-f68a-11e8-9658-513a3a6608f5.png)
+
+**PREVIEW: mongodb**
+![mongo](https://user-images.githubusercontent.com/23452999/49346621-105aae00-f68d-11e8-85ce-b0a78bcde813.png)
+
