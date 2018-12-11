@@ -5,7 +5,7 @@ class DataGatherer():
 
     def __init__(self, username):
         self.username = username
-        self.g = Github("***REMOVED***", "***REMOVED***")
+        self.g = Github()
         
 
     def gather_used_languages_in_repos(self):
